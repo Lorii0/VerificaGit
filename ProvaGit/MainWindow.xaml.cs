@@ -12,7 +12,7 @@ using System.Windows.Shapes;
 using VerificaGit;
 
 namespace ProvaGit
-{
+{    //commento da github
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
