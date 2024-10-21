@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Runtime.InteropServices;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -35,5 +36,14 @@ namespace ProvaGit
 
         }
 
+        private void lista_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            lista.Items.Clear();
+
+            for (int i = 0; i < biblioteca.numeroLibri(); i++)
+            {
+                lista.Items.Add(libri[i]);
+            }
+        }
     }
 }
