@@ -10,11 +10,18 @@ namespace VerificaGit
     {
         string autore;
         string titolo;
-        DateOnly annoPubblicazione;
+        int annoPubblicazione;
         string editore;
         int nPagine;
 
-        Libro(string autore, string titolo, DateOnly annoPubblicazione, string editore, int nPagine)
+        public string Autore { get { return autore; }set { autore = value; } }
+        public string Titolo { get { return autore; } set { autore = value; } }
+        public int AnnoPubblicazione { get { return annoPubblicazione; } set { annoPubblicazione = value; } }
+        public string Editore { get { return editore; } set { editore = value; } }
+        public int NumeroPagine { get { return nPagine; } set { nPagine = value; } }
+
+
+        Libro(string autore, string titolo, int annoPubblicazione, string editore, int nPagine)
         {
             this.autore = autore;
             this.titolo = titolo;
