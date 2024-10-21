@@ -8,7 +8,7 @@ namespace VerificaGit
 {
     internal class Biblioteca
     {
-        List<Libro> libri = new List<Libro>();
+        public List<Libro> libri = new List<Libro>();
 
         string nome;
         
